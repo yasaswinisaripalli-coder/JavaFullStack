@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple_login</title>
+    <style>
+        body{
+            text-align:center;
+            background-color:aliceblue;
+            font-family:Arial,Helvetica, sans-serif;
+            padding-bottom: 35%;
+            margin: 25%;
+        }
+        .login{
+            font-size: large;
+            color:black;
+            margin-bottom:10%;
+        }
+        #user{
+            font-size:medium;
+            padding-bottom:0.5%;
+            margin-bottom:2.5%;
+        }
+        #pass{
+            font-size:medium;
+            padding-bottom:0.5%;
+            margin-bottom:2.5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>LOGIN</h1>
+        <form action="">
+           <h4>username:<input type="text" id="user" placeholder="username"></h4>
+           <h4>password:<input type="password" id="pass" placeholder="password"></h4>
+           <button onclick="login(user.value,pass.value)" >login</button>
+</form>
+   </div>
+   <script>function login(user,pass){
+     if (user=="Maxi" && pass==123456789){
+         alert("login successful");
+    }
+     else{
+        alert("invalid login credentials");
+     }
+     } 
+   </script> 
+</body>
+</html>
